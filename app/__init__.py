@@ -1,9 +1,10 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# Creates the application object 
+
+# Creates the application object
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///digin.db'
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///digin.db"
 db = SQLAlchemy(app)
 
 # Import Views from the app module. (DO NOT Confuse with app variable)
